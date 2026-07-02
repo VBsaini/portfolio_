@@ -5,8 +5,8 @@ const nextConfig = {
   reactStrictMode: true,
 
   // Replace YOUR_REPO_NAME with your GitHub repository name
-  basePath: "/portfolio",
-  assetPrefix: "/portfolio",
+  basePath: "/portfolio_",
+  assetPrefix: "/portfolio_",
 
   output: "export",
   trailingSlash: true,

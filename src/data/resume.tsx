@@ -15,6 +15,8 @@ import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { Python } from "@/components/ui/svgs/python";
 import { Csharp } from "@/components/ui/svgs/csharp";
 
+const BaseUrl = "/portfolio_";
+
 const work: {
   company: string;
   href: string;
@@ -32,7 +34,7 @@ const work: {
     badges: ["Remote"],
     location: "Bangalore, India",
     title: "Web Development Intern",
-    logoUrl: "/reputes.svg",
+    logoUrl: `${BaseUrl}/reputes.svg`,
     start: "June 2025",
     end: "September 2025",
     description:
@@ -44,7 +46,7 @@ const work: {
     badges: ["Remote"],
     location: "NYC, USA",
     title: "SDE Intern",
-    logoUrl: "/shaithilyog.svg",
+    logoUrl: `${BaseUrl}/shaithilyog.svg`,
     start: "March 2025",
     end: "June 2025",
     description:
@@ -56,7 +58,7 @@ const work: {
     badges: ["Remote"],
     location: "Bangalore, India",
     title: "Full Stack Development Intern",
-    logoUrl: "/nexuskraft.svg",
+    logoUrl: `${BaseUrl}/nexuskraft.svg`,
     start: "August 2024",
     end: "February 2025",
     description:
@@ -151,7 +153,7 @@ export const DATA = {
       school: "Vivekananda Institute of Professional Studies, Delhi",
       href: "https://vips.edu/",
       degree: "B.Tech in Artificial Intelligence and Data Science",
-      logoUrl: "/vips.svg",
+      logoUrl: `${BaseUrl}/vips.svg`,
       start: "2023",
       end: "2027",
     },
@@ -159,7 +161,7 @@ export const DATA = {
       school: "The Cambridge International School, Khanpur, Delhi",
       href: "https://cambridgeedu.in/",
       degree: "Senior Secondary (CBSE)",
-      logoUrl: "/cambridge-international-school.png",
+      logoUrl: `${BaseUrl}/cambridge-international-school.png`,
       start: "2023",
       end: "2023",
     },
@@ -167,7 +169,7 @@ export const DATA = {
       school: "The Cambridge International School, Khanpur, Delhi",
       href: "https://cambridgeedu.in/",
       degree: "Secondary Education (CBSE)",
-      logoUrl: "/cambridge-international-school.png",
+      logoUrl: `${BaseUrl}/cambridge-international-school.png`,
       start: "2021",
       end: "2021",
     },
@@ -188,7 +190,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/sorted.jpeg",
+      image: `${BaseUrl}/sorted.jpeg`,
       video: "",
     },
     {
@@ -206,7 +208,7 @@ export const DATA = {
           icon: <Icons.googleDrive className="size-3" />,
         },
       ],
-      image: "/medcard.svg",
+      image: `${BaseUrl}/medcard.svg`,
       video: "",
     },
     {
@@ -228,7 +230,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/space-shooter.png",
+      image: `${BaseUrl}/space-shooter.png`,
       video: "",
     },
     {
@@ -245,7 +247,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/smart-brain.png",
+      image: `${BaseUrl}/smart-brain.png`,
       video: "",
     },
     {
@@ -262,7 +264,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/windows-clr-form.png",
+      image: `${BaseUrl}/windows-clr-form.png`,
       video: "",
     },
     {
@@ -279,7 +281,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/yelpcamp.png",
+      image: `${BaseUrl}/yelpcamp.png`,
       video: "",
     },
   ],
@@ -299,7 +301,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/BunkerInks.jpeg",
+      image: `${BaseUrl}/BunkerInks.jpeg`,
       video: "",
     },
     {
@@ -317,7 +319,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/Uprising.jpeg",
+      image: `${BaseUrl}/Uprising.jpeg`,
       video: "",
     },
     {
@@ -335,7 +337,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/FMCK.jpeg",
+      image: `${BaseUrl}/FMCK.jpeg`,
       video: "",
     },
   ],
