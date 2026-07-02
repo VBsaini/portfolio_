@@ -91,7 +91,7 @@ export const DATA = {
     "AI and Data Science student from New Delhi, India, focused on full-stack development, machine learning, web development and in love with game development.",
   summary:
     "I am pursuing a B.Tech in Artificial Intelligence and Data Science while building full-stack products, browser tools, Shopify extensions, and machine learning systems. I started coding during quarantine after a friend introduced me to web development, and since then I have worked across React, Next.js, Node.js, Python, C++, C#, Unity, databases, and production-oriented projects.",
-  avatarUrl: "/PFP.jpeg",
+  avatarUrl: `${BaseUrl}/PFP.jpeg`,
   skills: [
     { name: "C++", icon: Csharp },
     { name: "C#", icon: Csharp },
@@ -120,14 +120,14 @@ export const DATA = {
     { name: "Software Development", icon: Code2 },
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/#about", icon: UserRound, label: "About" },
-    { href: "/#work", icon: BriefcaseBusiness, label: "Work" },
-    { href: "/#education", icon: GraduationCap, label: "Education" },
-    { href: "/#skills", icon: Wrench, label: "Skills" },
-    { href: "/#projects", icon: FolderGit2, label: "Projects" },
-    { href: "/#freelance", icon: Handshake, label: "Freelance" },
-    { href: "/#contact", icon: MailIcon, label: "Contact" },
+    { href: `${BaseUrl}/`, icon: HomeIcon, label: "Home" },
+    { href: `${BaseUrl}/#about`, icon: UserRound, label: "About" },
+    { href: `${BaseUrl}/#work`, icon: BriefcaseBusiness, label: "Work" },
+    { href: `${BaseUrl}/#education`, icon: GraduationCap, label: "Education" },
+    { href: `${BaseUrl}/#skills`, icon: Wrench, label: "Skills" },
+    { href: `${BaseUrl}/#projects`, icon: FolderGit2, label: "Projects" },
+    { href: `${BaseUrl}/#freelance`, icon: Handshake, label: "Freelance" },
+    { href: `${BaseUrl}/#contact`, icon: MailIcon, label: "Contact" },
   ],
   contact: {
     email: "vbsaini2004@gmail.com",
