@@ -190,7 +190,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: `${BaseUrl}/sorted.jpeg`,
+      image: `${BaseUrl}/Sorted.jpeg`,
       video: "",
     },
     {
