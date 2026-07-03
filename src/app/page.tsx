@@ -35,7 +35,7 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                {/* <AvatarImage alt={DATA.name} src={DATA.avatarUrl} /> */}
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -49,9 +49,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
-              <Markdown>
-                {DATA.summary}
-              </Markdown>
+              <Markdown>{DATA.summary}</Markdown>
             </div>
           </BlurFade>
         </div>
@@ -88,18 +86,29 @@ export default function Page() {
                   >
                     <div className="flex items-center gap-x-3 flex-1 min-w-0">
                       {education.logoUrl ? (
-                        <img
-                          src={education.logoUrl}
-                          alt={education.school}
-                          className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
-                        />
+                        education.logoUrl.includes("cambridge") ? (
+                          <img
+                            src={education.logoUrl}
+                            alt={education.school}
+                            className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none object-cover"
+                          />
+                        ) : (
+                          <img
+                            src={education.logoUrl}
+                            alt={education.school}
+                            className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
+                          />
+                        )
                       ) : (
                         <div className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
                       )}
                       <div className="flex-1 min-w-0 flex flex-col gap-0.5">
                         <div className="font-semibold leading-none flex items-center gap-2">
                           {education.school}
-                          <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" aria-hidden />
+                          <ArrowUpRight
+                            className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200"
+                            aria-hidden
+                          />
                         </div>
                         <div className="font-sans text-sm text-muted-foreground">
                           {education.degree}
@@ -125,10 +134,17 @@ export default function Page() {
           </BlurFade>
           <div className="flex flex-wrap gap-2">
             {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+              <BlurFade
+                key={skill.name}
+                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+              >
                 <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl h-8 w-fit px-4 flex items-center gap-2">
-                  {skill.icon && <skill.icon className="size-4 rounded overflow-hidden object-contain" />}
-                  <span className="text-foreground text-sm font-medium">{skill.name}</span>
+                  {skill.icon && (
+                    <skill.icon className="size-4 rounded overflow-hidden object-contain" />
+                  )}
+                  <span className="text-foreground text-sm font-medium">
+                    {skill.name}
+                  </span>
                 </div>
               </BlurFade>
             ))}
@@ -147,14 +163,19 @@ export default function Page() {
               <div className="flex items-center w-full">
                 <div className="flex-1 h-px bg-linear-to-r from-transparent from-5% via-border via-95% to-transparent" />
                 <div className="border bg-primary z-10 rounded-xl px-4 py-1">
-                  <span className="text-background text-sm font-medium">Freelance Work</span>
+                  <span className="text-background text-sm font-medium">
+                    Freelance Work
+                  </span>
                 </div>
                 <div className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent" />
               </div>
               <div className="flex flex-col gap-y-3 items-center justify-center">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Client websites I&apos;ve built</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                  Client websites I&apos;ve built
+                </h2>
                 <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-                  React websites and landing pages delivered for freelance clients.
+                  React websites and landing pages delivered for freelance
+                  clients.
                 </p>
               </div>
             </div>
