@@ -139,6 +139,12 @@ export const DATA = {
         icon: Icons.github,
         navbar: true,
       },
+      Resume: {
+        name: "Download Resume",
+        url: `${BaseUrl}/vaibhav_saini.pdf`,
+        icon: Icons.resume,
+        navbar: true,
+      },
       email: {
         name: "Send Email",
         url: "mailto:vbsaini2004@gmail.com",
