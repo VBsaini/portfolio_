@@ -41,12 +41,12 @@ const work: {
       "Architected and deployed a Shopify extension that integrates a map with store locations. Used the Remix framework for the frontend and GraphQL to store user store data. Led a team of 5 and published the extension to the Shopify Marketplace.",
   },
   {
-    company: "Shaithilyog",
+    company: "STEALTH HEALTHCARE STARTUP (NDA)",
     href: "",
     badges: ["Remote"],
     location: "NYC, USA",
     title: "SDE Intern",
-    logoUrl: `${BaseUrl}/shaithilyog.svg`,
+    logoUrl: `${BaseUrl}/sy.svg`,
     start: "March 2025",
     end: "June 2025",
     description:
